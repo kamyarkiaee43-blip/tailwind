@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kamyar Kiaei | Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+<!-- ========== NAVBAR ========== -->
+<nav class="bg-gray-900 text-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex justify-between items-center h-16">
+      <h1 class="text-xl font-bold">Kamyar Kiaei</h1>
+      <div class="space-x-4 hidden md:block">
+        <a href="#about" class="hover:text-gray-300">About</a>
+        <a href="#skills" class="hover:text-gray-300">Skills</a>
+        <a href="#projects" class="hover:text-gray-300">Projects</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== ABOUT SECTION ========== -->
+<section id="about" class="max-w-6xl mx-auto mt-10 px-4 grid md:grid-cols-2 gap-6">
+  <div class="bg-white p-6 rounded shadow">
+    <h2 class="text-2xl font-bold mb-3">About Me</h2>
+    <p>
+      نام من کامیار کیایی است. من دانشجوی مهندسی کامپیوتر هستم و علاقه زیادی به توسعه فرانت‌اند وب و طراحی رابط کاربری مدرن دارم. از ایجاد رابط‌های کاربری واکنش‌گرا و تمیز لذت می‌برم.
+
+    </p>
+  </div>
+
+  <div class="bg-white p-6 rounded shadow">
+    <h2 class="text-2xl font-bold mb-3">Education</h2>
+    <ul class="list-disc ml-5">
+      <li>کارشناسی مهندسی کامپیوتر
+</li>
+      <li>دانشجو</li>
+      <li>تمرکز بر فناوری‌های وب
+</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== SKILLS SECTION ========== -->
+<section id="skills" class="max-w-6xl mx-auto mt-10 px-4">
+  <h2 class="text-2xl font-bold mb-6 text-center">Technical Skills</h2>
+
+  <p class="mb-1">HTML</p>
+  <div class="w-full bg-gray-300 rounded h-5 mb-4">
+    <div class="bg-green-500 h-5 rounded text-sm text-white text-center" style="width:85%">
+      85%
+    </div>
+  </div>
+
+  <p class="mb-1">CSS</p>
+  <div class="w-full bg-gray-300 rounded h-5 mb-4">
+    <div class="bg-blue-500 h-5 rounded text-sm text-white text-center" style="width:75%">
+      75%
+    </div>
+  </div>
+
+  <p class="mb-1">Tailwind CSS</p>
+  <div class="w-full bg-gray-300 rounded h-5 mb-4">
+    <div class="bg-yellow-500 h-5 rounded text-sm text-white text-center" style="width:70%">
+      70%
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROJECTS SECTION ========== -->
+<section id="projects" class="max-w-6xl mx-auto mt-10 px-4">
+  <h2 class="text-2xl font-bold mb-6 text-center">Projects</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-white p-6 rounded shadow">
+      <h3 class="font-bold text-lg mb-2">Personal Resume Website</h3>
+      <p class="mb-4">
+       یک وب‌سایت رزومه واکنش‌گرا که با استفاده از Tailwind CSS به عنوان یک تمرین دانشگاهی توسعه یافته است.
+
+      </p>
+      <button
+        onclick="openModal()"
+        class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+      >
+        View Details
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MODAL ========== -->
+<div
+  id="modal"
+  class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center"
+>
+  <div class="bg-white w-11/12 md:w-1/3 p-6 rounded shadow">
+    <h3 class="text-xl font-bold mb-3">Project Details</h3>
+    <p class="mb-4">
+      این پروژه نشان‌دهنده استفاده از ابزارهای Tailwind CSS برای طراحی چیدمان، طراحی واکنش‌گرا، کارت‌ها، نوارهای پیشرفت و پیاده‌سازی مودال با استفاده از جاوااسکریپت ساده است.
+
+    </p>
+    <button
+      onclick="closeModal()"
+      class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700"
+    >
+      Close
+    </button>
+  </div>
+</div>
+
+<!-- ========== JS FOR MODAL ========== -->
+<script>
+  function openModal() {
+    document.getElementById("modal").classList.remove("hidden");
+  }
+
+  function closeModal() {
+    document.getElementById("modal").classList.add("hidden");
+  }
+</script>
+
+</body>
+</html>
